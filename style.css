@@ -1,0 +1,204 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 20px 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+    color: #003366;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    color: #00539C;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #777;
+    margin-bottom: 30px;
+  }
+  
+  /* Form Styles */
+  form {
+    width: 100%;
+  }
+  
+  fieldset {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  legend {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 10px;
+    padding: 0 10px;
+  }
+  
+  label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #f8f8f8;
+  }
+  
+  input[type="range"] {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  input[type="file"] {
+    margin-bottom: 15px;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .checkbox-group input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 8px;
+  }
+  
+  /* Button Styles */
+  button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1rem;
+    background-color: #00539C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #003366;
+  }
+  
+  /* Success Message */
+  #successMessage {
+    display: none;
+    background-color: #e0ffe0;
+    color: #008000;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #00c400;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  #salaryValue {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #333;
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px;
+    }
+  
+    button[type="submit"] {
+      font-size: 1rem;
+      padding: 12px;
+    }
+  
+    legend {
+      font-size: 1.2rem;
+    }
+  }
+  .title-section {
+    display: flex;
+    align-items: center; /* Aligns items vertically */
+    justify-content: center; /* Aligns items horizontally */
+    flex-direction: column; /* Stacks the logo and text */
+    margin-bottom: 20px;
+  }
+
+  /* Logo styling */
+  .logo {
+    width: 150px; /* Adjust logo width */
+    height: auto; /* Keeps aspect ratio */
+    margin-bottom: 15px; /* Space between logo and text */
+  }
+
+  /* Text styling */
+  .title-text h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+  }
+
+  .title-text h2 {
+    font-size: 1.8rem;
+    margin: 5px 0;
+  }
+
+  .title-text p {
+    font-size: 1rem;
+  }
+  

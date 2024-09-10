@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Y-Axis Consultancy - Overseas Job Application Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="container">
+        <div class="title-section">
+          <!-- Add logo here -->
+          <img src="WhatsApp Image 2024-09-10 at 11.39.32_7dde61c2.jpg" alt="Y-Axis Consultancy Logo" class="logo">
+          <div class="title-text">
+            <h1>Y-Axis Consultancy</h1>
+            <h2>Overseas Job Application Form</h2>
+            <p>Connecting You to Global Opportunities</p>
+          </div>
+        </div>
+   
+    
+
+    <form id="jobApplicationForm">
+      <!-- Step 1: Personal Information -->
+      <fieldset>
+        <legend>Step 1: Personal Information</legend>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="nationality">Nationality:</label>
+        <select id="nationality" name="nationality" required>
+          <option value="">Select Nationality</option>
+          <option value="Indian">Indian</option>
+          <option value="American">American</option>
+          <option value="Canadian">Canadian</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <label for="phone">Contact Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+91 9876543210" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="address">Residential Address:</label>
+        <input type="text" id="address" name="address" placeholder="Auto-fill Address" required>
+
+        <!-- Passport & Visa Information -->
+        <label for="passportNumber">Passport Number:</label>
+        <input type="text" id="passportNumber" name="passportNumber" pattern="[A-Z0-9]{6,9}" title="Please enter a valid passport number" required>
+
+        <label for="expiryDate">Passport Expiry Date:</label>
+        <input type="date" id="expiryDate" name="expiryDate" required>
+
+        <label>Do you currently hold a valid visa?</label>
+        <input type="radio" id="visaYes" name="visa" value="yes">
+        <label for="visaYes">Yes</label>
+        <input type="radio" id="visaNo" name="visa" value="no">
+        <label for="visaNo">No</label>
+
+        <div id="visaDetails" style="display: none;">
+          <label for="visaCountry">Country:</label>
+          <input type="text" id="visaCountry" name="visaCountry">
+          <label for="visaType">Visa Type:</label>
+          <input type="text" id="visaType" name="visaType">
+        </div>
+
+        <label>Preferred Country of Work:</label>
+        <div class="checkbox-group">
+          <input type="checkbox" name="country" value="USA"> USA
+          <input type="checkbox" name="country" value="Canada"> Canada
+          <input type="checkbox" name="country" value="UK"> UK
+          <input type="checkbox" name="country" value="Australia"> Australia
+          <input type="checkbox" name="country" value="Germany"> Germany
+          <input type="checkbox" name="country" value="Other"> Other
+          <input type="text" id="otherCountry" name="otherCountry" placeholder="If other, specify" style="display:none;">
+        </div>
+      </fieldset>
+
+      <!-- Step 2: Job Preferences -->
+      <fieldset>
+        <legend>Step 2: Job Preferences</legend>
+        <label for="jobTitle">Desired Job Title:</label>
+        <input type="text" id="jobTitle" name="jobTitle" required>
+
+        <label for="industry">Industry/Field of Work:</label>
+        <select id="industry" name="industry" required>
+          <option value="">Select Industry</option>
+          <option value="IT">IT</option>
+          <option value="Engineering">Engineering</option>
+          <option value="Healthcare">Healthcare</option>
+        </select>
+
+        <label for="location">Preferred Work Location:</label>
+        <input type="text" id="location" name="location" required>
+
+        <label for="salary">Expected Salary (Monthly):</label>
+        <input type="range" id="salary" name="salary" min="2000" max="20000" step="500">
+        <span id="salaryValue">10,000</span>
+      </fieldset>
+
+      <!-- Step 3: Educational Background -->
+      <fieldset>
+        <legend>Step 3: Educational Background</legend>
+        <label for="educationLevel">Highest Level of Education:</label>
+        <select id="educationLevel" name="educationLevel" required>
+          <option value="">Select Level</option>
+          <option value="High School">High School</option>
+          <option value="Bachelor">Bachelor's</option>
+          <option value="Master">Master's</option>
+          <option value="PhD">PhD</option>
+        </select>
+
+        <label for="institution">Institution/University Name:</label>
+        <input type="text" id="institution" name="institution" required>
+
+        <label for="degree">Degree Earned:</label>
+        <input type="text" id="degree" name="degree" required>
+
+        <label for="graduationYear">Year of Graduation:</label>
+        <input type="number" id="graduationYear" name="graduationYear" min="1900" max="2024" required>
+      </fieldset>
+
+      <!-- Step 4: Work Experience -->
+      <fieldset>
+        <legend>Step 4: Work Experience</legend>
+        <label for="companyName">Current/Most Recent Employer:</label>
+        <input type="text" id="companyName" name="companyName" required>
+
+        <label for="jobTitleExp">Job Title:</label>
+        <input type="text" id="jobTitleExp" name="jobTitleExp" required>
+
+        <label for="startDate">Start Date:</label>
+        <input type="date" id="startDate" name="startDate" required>
+
+        <label for="endDate">End Date:</label>
+        <input type="date" id="endDate" name="endDate" required>
+
+        <label for="responsibilities">Key Responsibilities:</label>
+        <textarea id="responsibilities" name="responsibilities" rows="4" required></textarea>
+
+        <!-- Add more work experiences dynamically if needed -->
+      </fieldset>
+
+      <!-- Step 5: Skills & Competencies -->
+      <fieldset>
+        <legend>Step 5: Skills & Competencies</legend>
+        <label for="skills">Technical Skills:</label>
+        <input type="text" id="skills" name="skills" placeholder="Enter key skills, separated by commas" required>
+
+        <label for="language">Language Proficiency:</label>
+        <select id="language" name="language" required>
+          <option value="">Select Proficiency</option>
+          <option value="Basic">Basic</option>
+          <option value="Intermediate">Intermediate</option>
+          <option value="Fluent">Fluent</option>
+          <option value="Native">Native</option>
+        </select>
+
+        <label for="certifications">Certifications:</label>
+        <input type="file" id="certifications" name="certifications" accept=".pdf,.docx,.jpg,.jpeg">
+      </fieldset>
+
+      <!-- Step 6: Additional Information -->
+      <fieldset>
+        <legend>Step 6: Additional Information</legend>
+        <label>Are you willing to relocate internationally?</label>
+        <input type="radio" id="relocateYes" name="relocate" value="yes" required>
+        <label for="relocateYes">Yes</label>
+        <input type="radio" id="relocateNo" name="relocate" value="no">
+        <label for="relocateNo">No</label>
+
+        <label>Have you applied for jobs overseas before?</label>
+        <input type="radio" id="appliedYes" name="applied" value="yes" required>
+        <label for="appliedYes">Yes</label>
+        <input type="radio" id="appliedNo" name="applied" value="no">
+        <label for="appliedNo">No</label>
+
+        <label>Do you have any international work experience?</label>
+        <input type="radio" id="intlExpYes" name="intlExp" value="yes" required>
+        <label for="intlExpYes">Yes</label>
+        <input type="radio" id="intlExpNo" name="intlExp" value="no">
+        <label for="intlExpNo">No</label>
+
+        <div id="intlExperienceDetails" style="display: none;">
+          <label for="intlExpDetails">Please provide details:</label>
+          <textarea id="intlExpDetails" name="intlExpDetails" rows="4"></textarea>
+        </div>
+      </fieldset>
+
+     
+
+
+
+      <!-- Step 7: Document Uploads -->
+      <fieldset>
+        <legend>Step 7: Document Uploads</legend>
+        <label for="resume">Upload Resume/CV:</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.docx,.jpg,.jpeg" required>
+
+        <label for="coverLetter">Cover Letter (Optional):</label>
+        <input type="file" id="coverLetter" name="coverLetter" accept=".pdf,.docx,.jpg,.jpeg">
+
+        <label for="passportCopy">Passport Copy:</label>
+        <input type="file" id="passportCopy" name="passportCopy" accept=".pdf,.docx,.jpg,.jpeg" required>
+
+        <label for="educationCerts">Educational Certificates:</label>
+        <input type="file" id="educationCerts" name="educationCerts" accept=".pdf,.docx,.jpg,.jpeg" required>
+
+        <label for="workExperienceLetters">Work Experience Letters:</label>
+        <input type="file" id="workExperienceLetters" name="workExperienceLetters" accept=".pdf,.docx,.jpg,.jpeg" required>
+
+        <label for="visaPermit">Visa/Work Permit (if available):</label>
+        <input type="file" id="visaPermit" name="visaPermit" accept=".pdf,.docx,.jpg,.jpeg">
+      </fieldset>
+
+      <!-- Step 8: Video Introduction (Optional) -->
+      <!-- <fieldset>
+        <legend>Step 8: Video Introduction (Optional)</legend>
+        <label for="videoIntro">Upload Video Introduction:</label>
+        <input type="file" id="videoIntro" name="videoIntro" accept="video/*">
+      </fieldset> -->
+
+      <!-- Step 9: Review & Submit -->
+      <fieldset>
+        <legend>Step 8: Review & Submit</legend>
+        <label for="terms">
+          <input type="checkbox" id="terms" name="terms" required>
+          I agree to the terms and conditions and privacy policy of Y-Axis Consultancy
+        </label>
+
+        <button type="submit">Submit Application</button>
+      </fieldset>
+
+      <!-- Success Message -->
+      <div id="successMessage">
+        <p>Thank you for applying with Y-Axis Consultancy. We will review your application and get back to you soon! Please check your email for a confirmation and further instructions.</p>
+      </div>
+    </form>
+  </div>
+
+  
+</body>
+</html>
